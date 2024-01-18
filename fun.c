@@ -18,8 +18,6 @@ void _add(stack_t **head, unsigned int counter)
 	stack_t *stack_ptr;
 	int stack_len = 0, sum;
 
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
-
 	stack_ptr = *head;
 	while (stack_ptr)
 	{
@@ -92,8 +90,6 @@ void _div(stack_t **head, unsigned int counter)
 {
 	stack_t *stack_ptr;
 	int stack_len = 0, quotient;
-
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 
 	stack_ptr = *head;
 	while (stack_ptr)

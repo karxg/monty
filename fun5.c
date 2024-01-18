@@ -8,8 +8,6 @@
 */
 void _queue(stack_t **head, unsigned int counter)
 {
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
-
 	(void)head;
 	(void)counter;
 	bus.lifi = 1;
@@ -77,8 +75,6 @@ void _addqueue(stack_t **head, int n)
 void _push(stack_t **head, unsigned int counter)
 {
 	int val, index = 0, invalid_flag = 0;
-
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 
 	if (bus.arg)
 	{

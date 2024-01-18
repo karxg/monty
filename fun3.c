@@ -40,7 +40,6 @@ void _mul(stack_t **head, unsigned int counter)
 	stack_t *current;
 	int len = 0, result;
 
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 
 	current = *head;
 	while (current)

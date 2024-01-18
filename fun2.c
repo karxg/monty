@@ -50,7 +50,6 @@ void _pstr(stack_t **head, unsigned int counter)
 void _pop(stack_t **head, unsigned int counter)
 {
 	stack_t *top_element;
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 
 	if (*head == NULL)
 	{
@@ -82,8 +81,6 @@ void _pop(stack_t **head, unsigned int counter)
 
 void _pint(stack_t **head, unsigned int counter)
 {
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
-
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%u : can't pint, stack empty\n", counter);

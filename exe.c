@@ -38,7 +38,6 @@ int exe(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	unsigned int opcode_index = 0;
 	char *current_opcode;
 
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 	current_opcode = strtok(content, " \n\t");
 	if (current_opcode && current_opcode[0] == '#')
 		return (0);

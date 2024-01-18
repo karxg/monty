@@ -16,7 +16,6 @@
 
 void _swap(stack_t **head, unsigned int counter)
 {
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
 
 	stack_t *current;
 	int len = 0, aux;
@@ -62,8 +61,6 @@ void _swap(stack_t **head, unsigned int counter)
 
 void _stack(stack_t **head, unsigned int counter)
 {
-	bus_t bus __attribute__((unused)) = {NULL, NULL, NULL, 0};
-
 	(void)head;
 	(void)counter;
 	bus.lifi = 0;
